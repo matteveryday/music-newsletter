@@ -1,0 +1,11 @@
+<table>
+  <tbody>
+    {% for track in page.tracklist %}
+    <tr>
+      <td>{{ track.track-number }}</td>
+      <td>{{ track.track-title }}</td>
+      <td>{{ track.track-detail }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
