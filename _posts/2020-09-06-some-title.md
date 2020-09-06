@@ -6,7 +6,7 @@ preview-text: this is my preview text
 blocks:
   - type: tracklist
     track-number: "04"
-    track-title: Running
+    track-title: Something Title
     track-detail: 3:14
 tracklist:
   - track-number: "04"
