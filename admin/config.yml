@@ -24,6 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Preview Text", name: 'preview-text', widget: 'string'}
       - {label: "Meta Description", name: "meta_description", widget: "string", required: false}
       - label: 'TrackList'
+        label_singular: 'Track'
         name: 'tracklist'
         widget: 'list'
         summary: '{{fields.track-number}} - {{fields.track-title}} - {{ fields.track-detail }}'
