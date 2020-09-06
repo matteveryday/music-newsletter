@@ -16,11 +16,23 @@ layout: default
 <p>{{ page.issue-no }}</p>
 <p>{{ page.preview-text }}</p>
 
+<table>
+  <tbody>
+    {% for track in page.tracklist %}
+    <tr>
+      <td>{{ track.track-number }}</td>
+      <td>{{ track.track-title }}</td>
+      <td>{{ track.track-detail }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
+<img src="{{ page.hero-image }}">
 
-{% for block in page.blocks %}
-  {% include blocks/{{ block.type }}.html block=block %}
-{% endfor %}
+<div class="body-content">
+  {{ page.text-block }}
+</div>
 
 -----
 
