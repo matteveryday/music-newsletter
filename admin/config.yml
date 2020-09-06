@@ -49,7 +49,7 @@ collections: # A list of collections the CMS should be able to edit
     # ISSUES
   - name: "issue"
     label: "Issue"
-    folder: "issues"
+    folder: "_issues"
     sort: "date:desc"
     create: true
     slug: "issue-{{issue-no}}"
