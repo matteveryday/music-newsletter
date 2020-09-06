@@ -23,15 +23,27 @@ collections: # A list of collections the CMS should be able to edit
       - {label: 'Issue No.', name: 'issue-no', widget: 'string'}
       - {label: "Preview Text", name: 'preview-text', widget: 'string'}
       - {label: "Meta Description", name: "meta_description", widget: "string", required: false}
-      - label: 'TrackList'
-        label_singular: 'Track'
-        name: 'tracklist'
+      - label: "Content Blocks"
+        label_singular: 'Block'
+        name: 'blocks'
         widget: 'list'
-        summary: '{{fields.track-number}} - {{fields.track-title}} - {{ fields.track-detail }}'
-        fields:
-          - {label: 'Track Number', name: 'track-number', widget: 'string'}
-          - {label: 'Track Title', name: 'track-title', widget: 'string'}
-          - {label: 'Track Detail', name: 'track-detail', widget: 'string'}
+        types:
+          - label: 'Hero Image'
+            name: 'hero-image'
+            widget: 'image'
+            allow_multiple: false
+          - label: 'Rich Text Block'
+            name: 'text-block'
+            widget: 'markdown'
+          - label: 'TrackList'
+            label_singular: 'Track'
+            name: 'tracklist'
+            widget: 'list'
+            summary: '{{fields.track-number}} - {{fields.track-title}} - {{ fields.track-detail }}'
+            fields:
+              - {label: 'Track Number', name: 'track-number', widget: 'string'}
+              - {label: 'Track Title', name: 'track-title', widget: 'string'}
+              - {label: 'Track Detail', name: 'track-detail', widget: 'string'}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
