@@ -7,6 +7,9 @@ tracklist:
   - track-number: "04"
     track-title: Running
     track-detail: ☆☆☆☆☆
+  - track-number: "10"
+    track-title: Song Title
+    track-detail: ☆☆☆
 date: 2020-09-06 14:28:59
 categories: category, two, three
 ---
