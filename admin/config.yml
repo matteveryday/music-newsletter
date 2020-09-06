@@ -27,7 +27,7 @@ collections: # A list of collections the CMS should be able to edit
         label_singular: 'Block'
         name: 'blocks'
         widget: 'list'
-        widgets:
+        types:
           # - {label: 'Hero Image', name: hero-image, widget: image, allow_multiple: false}
           # - {label: 'Rich Text Block', name: text-block, widget: markdown}
           - { label: 'Text Block', name: 'text-block', widget: 'markdown' }
