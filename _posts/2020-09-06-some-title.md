@@ -3,11 +3,7 @@ layout: post
 title: Issue 001
 issue-no: "001"
 preview-text: this is my preview text
-blocks:
-  - type: tracklist
-    track-number: "04"
-    track-title: Running
-    track-detail: 3:14
+blocks: []
 tracklist:
   - track-number: "04"
     track-title: Running
