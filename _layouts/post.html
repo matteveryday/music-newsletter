@@ -15,6 +15,17 @@ layout: default
 
 <p>{{ page.issue-no }}</p>
 <p>{{ page.preview-text }}</p>
+<table>
+  <tbody>
+    <tr>
+      {% for track in page.tracklist %}
+      <td>{{ track.track-number }}</td>
+      <td>{{ track.track-title }}</td>
+      <td>{{ track.track-detail }}</td>
+      {% endfor %}
+    </tr>
+  </tbody>
+</table>
 
 -----
 
